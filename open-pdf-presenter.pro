@@ -24,13 +24,7 @@ UI_DIR = $$OBJECTS_DIR
 RCC_DIR = $$OBJECTS_DIR
 
 CONFIG += qt debug
-QT += xml xmlpatterns
-
-# Support for Qt5
-greaterThan(QT_MAJOR_VERSION, 4) {
-  message("Building with Qt5 is currently broken due to missing poppler-qt5")
-  QT += widgets
-}
+QT += xml xmlpatterns widgets
 
 # Version
 DEFINES += 'OPP_VERSION=\'\"0.3.0\"\''
