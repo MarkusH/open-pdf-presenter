@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 2.6)
 # Project Definitions
 set(PROJECT_VERSION_MAJOR 0)
 set(PROJECT_VERSION_MINOR 4)
-set(PROJECT_VERSION_PATCH 00)
+set(PROJECT_VERSION_PATCH 1)
 set(PROJECT_WEBSITE "https://code.google.com/p/open-pdf-presenter/")
 
 set(PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}")
