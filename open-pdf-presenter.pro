@@ -36,11 +36,11 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 DEFINES += 'OPP_VERSION=\'\"0.3.0\"\''
 
 # POPPLER
-#INCLUDEPATH += /usr/include/poppler/qt4
-#LIBS += -lpoppler-qt4
+#INCLUDEPATH += /usr/include/poppler/qt5
+#LIBS += -lpoppler-qt5
 # Use pkg-config to get the correct include and link flags for poppler
 CONFIG += link_pkgconfig
-PKGCONFIG += poppler-qt4
+PKGCONFIG += poppler-qt5
 
 unix {
   message("Note: KDE power management has been moved into a plugin that must be built separately (kdepm subdirectory)")
@@ -109,7 +109,3 @@ unix {
   target.path += $$PREFIX/bin/
   INSTALLS += desktop target
 }
-
-
-
-

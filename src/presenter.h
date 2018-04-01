@@ -32,7 +32,7 @@
 
 #include <QList>
 #include <QWidget>
-#include <poppler-qt4.h>
+#include <poppler-qt5.h>
 
 class PresenterConfiguration {
 	private:
