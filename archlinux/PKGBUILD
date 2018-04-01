@@ -1,0 +1,26 @@
+# Maintainer: Markus Holtermann <aur@markusholtermann.eu>
+# Contributor: Oliver Lantwin <olantwin+aur@gmail.com>
+# Contributor: strigyskow
+
+pkgname=open-pdf-presenter
+pkgver=0.4.0
+pkgrel=1
+pkgdesc="A program for presenting PDFs featuring a presenter console on an auxiliary monitor"
+arch=('i686' 'x86_64')
+url="http://code.google.com/p/open-pdf-presenter/"
+license=('GPL')
+groups=()
+depends=('qt5-base' 'qt5-xmlpatterns' 'poppler-qt5')
+source=("https://github.com/MarkusH/open-pdf-presenter/archive/$pkgver.tar.gz")
+sha256sums=('e7b7b95ba5911239f747e61a58f5e3cb82a92d9184e00f45980eea25e5ba577b')
+
+build() {
+	cd "$srcdir/$pkgname-$pkgver"
+	qmake PREFIX="/usr"
+	make
+}
+
+package() {
+	cd "$srcdir/$pkgname-$pkgver"
+	make INSTALL_ROOT="$pkgdir" install
+}
