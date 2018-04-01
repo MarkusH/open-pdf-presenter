@@ -1,7 +1,7 @@
 #include "parser.h"
 
-#include <QtXmlPatterns/QXmlSchema>
-#include <QtXmlPatterns/QXmlSchemaValidator>
+// #include <QtXmlPatterns/QXmlSchema>
+// #include <QtXmlPatterns/QXmlSchemaValidator>
 
 #include <QList>
 
@@ -74,18 +74,18 @@ bool NotesParser::characters(const QString &ch) {
 }
 
 void NotesParser::validateAndParse(QString resource) {
-	QXmlSchema schema;
-	schema.load( QUrl::fromLocalFile(":/notes/notes.xsd"));
+	// QXmlSchema schema;
+	// schema.load( QUrl::fromLocalFile(":/notes/notes.xsd"));
 
-	if (!schema.isValid())
-		//TODO: print error
-		throw ParserException(this->errors);
+	// if (!schema.isValid())
+	// 	//TODO: print error
+	// 	throw ParserException(this->errors);
 
-	QXmlSchemaValidator validator(schema);
-	validator.setMessageHandler(this);
-	if (!validator.validate(QUrl(resource))) {
-		throw ParserException(this->errors);
-	}
+	// QXmlSchemaValidator validator(schema);
+	// validator.setMessageHandler(this);
+	// if (!validator.validate(QUrl(resource))) {
+	// 	throw ParserException(this->errors);
+	// }
 
 	QFile file(resource);
 	QXmlInputSource source(&file);
