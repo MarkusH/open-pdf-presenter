@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/controlbar">
+        <file>BorderToolbarLeft.png</file>
+        <file>BorderToolbarRight.png</file>
+        <file>BorderToolbarTop.png</file>
+        <file>BorderToolbarTopLeft.png</file>
+        <file>BorderToolbarTopRight.png</file>
+        <file>BorderToolbarBottom.png</file>
+        <file>ButtonSlideNextNormal.png</file>
+        <file>ButtonSlidePreviousNormal.png</file>
+        <file>Background.png</file>
+        <file>ButtonSlideSorterNormal.png</file>
+        <file>ButtonNotesNormal.png</file>
+    </qresource>
+</RCC>
