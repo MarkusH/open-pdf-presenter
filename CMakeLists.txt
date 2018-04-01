@@ -32,8 +32,8 @@ macro(FIND_HEADERS_TO_MOC return_list header_list)
 endmacro()
 
 # Libraries
-find_package(Qt5 COMPONENTS QtGui QtXml QtXmlPatterns REQUIRED)
-include(UseQt5)
+find_package(Qt5 COMPONENTS Gui Widgets Xml XmlPatterns REQUIRED)
+# include(UseQt5)
 include_directories(${QT_INCLUDES})
 
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake/modules/)
