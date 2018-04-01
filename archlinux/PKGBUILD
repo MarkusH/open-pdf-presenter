@@ -12,7 +12,7 @@ license=('GPL')
 groups=()
 depends=('qt5-base' 'qt5-xmlpatterns' 'poppler-qt5')
 source=("https://github.com/MarkusH/open-pdf-presenter/archive/$pkgver.tar.gz")
-sha256sums=('e7b7b95ba5911239f747e61a58f5e3cb82a92d9184e00f45980eea25e5ba577b')
+sha256sums=('8908460148f4d96409cd93c093ea8d64f29c9c09bee67b496240a2b48c93573d')
 
 build() {
 	cd "$srcdir/$pkgname-$pkgver"
